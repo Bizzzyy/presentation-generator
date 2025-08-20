@@ -105,3 +105,7 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# PowerPoint files (too large for GitHub)
+*.pptx
+*.ppt
