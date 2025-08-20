@@ -7,6 +7,7 @@ import path from 'path';
 import { presentationRoutes } from './routes/presentationRoutes';
 import { errorHandler } from './middleware/errorHandler';
 
+// Load environment variables
 dotenv.config();
 
 const app = express();
@@ -43,3 +44,4 @@ app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📊 Presentation Generator API ready`);
 });
+# Restart server

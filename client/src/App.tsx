@@ -101,7 +101,7 @@ const App: React.FC = () => {
           Create Visually Stunning AI-Powered Presentations
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Generate professional 5-slide PowerPoint presentations with modern graphics, charts, and visual elements
+          Generate professional 5-slide PowerPoint presentations with the powerful Office PowerPoint MCP Server - featuring 32+ advanced tools, professional templates, and enterprise-grade design capabilities
         </Typography>
       </Box>
 
@@ -195,14 +195,14 @@ const App: React.FC = () => {
                 Features
               </Typography>
               <Box>
-                <Chip label="Modern Visual Design" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Interactive Charts & Graphics" size="small" sx={{ m: 0.5 }} />
-                <Chip label="5 Professional Slides" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Account Management Focus" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Office PowerPoint MCP Server" size="small" sx={{ m: 0.5 }} />
+                <Chip label="32+ Professional Tools" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Built-in Slide Templates" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Salesforce Design Themes" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Dynamic Content Adaptation" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Professional Visual Effects" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Enterprise-Grade Quality" size="small" sx={{ m: 0.5 }} />
                 <Chip label="AI-Generated Content" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Instant PowerPoint" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Data Visualization" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Professional Templates" size="small" sx={{ m: 0.5 }} />
               </Box>
             </CardContent>
           </Card>
@@ -240,7 +240,7 @@ const App: React.FC = () => {
 
       <Box textAlign="center" mt={6}>
         <Typography variant="body2" color="text.secondary">
-          Powered by AI • Designed for Account Management Excellence
+          Powered by Office PowerPoint MCP Server v2.0 • Enterprise AI Presentation Generation
         </Typography>
       </Box>
     </Container>
