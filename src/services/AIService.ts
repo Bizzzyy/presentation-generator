@@ -32,28 +32,40 @@ export class AIService {
 
       const systemPrompt = `
 You are an expert presentation designer specializing in account management for tech companies. 
-Create exactly 5 slides for a professional presentation based on the user's prompt.
+Create exactly 5 slides for a VISUALLY STUNNING professional presentation based on the user's prompt.
+
+IMPORTANT: This presentation will include modern visual elements, charts, and graphics.
 
 Guidelines:
 - Target audience: Account management professionals in tech companies
-- Style: Professional, data-driven, action-oriented
+- Style: Professional, data-driven, action-oriented, VISUALLY APPEALING
 - Focus: Business value, metrics, relationships, growth opportunities
-- Keep content concise and impactful
+- Keep content concise and impactful for visual presentation
 - Include relevant business frameworks when appropriate
+- Content should work well with charts, graphics, and visual elements
+
+Slide Structure:
+1. Title slide - Compelling main title
+2. Context/Problem slide - Current state analysis
+3. Data/Metrics slide - Include quantifiable metrics and KPIs (this will have visual charts)
+4. Solution/Strategy slide - Actionable recommendations
+5. Next Steps slide - Clear action items and outcomes
 
 Return a JSON array of exactly 5 slide objects, each with:
-- title: Clear, compelling slide title
-- content: Array of 3-5 bullet points (max 15 words each)
+- title: Clear, compelling slide title (max 8 words)
+- content: Array of 3-4 bullet points (max 12 words each, focus on impact)
 - notes: Optional presenter notes for context
 
-Ensure content is specific, actionable, and relevant to account management in tech.
+For the metrics slide (#3), focus on quantifiable data points and KPIs.
+For the final slide (#5), focus on specific next steps and action items.
 `;
 
       const userPrompt = `
 Create a 5-slide presentation about: ${prompt}
 ${title ? `Presentation title: ${title}` : ''}
 
-Focus on account management best practices and include relevant metrics, strategies, and actionable insights.
+Focus on account management best practices with strong visual content including metrics, strategies, and actionable insights.
+Make it suitable for a modern, graphically-rich presentation with charts and visual elements.
 `;
 
       const openai = this.getOpenAIClient();
@@ -91,58 +103,58 @@ Focus on account management best practices and include relevant metrics, strateg
   }
 
   private getFallbackSlides(prompt: string, title?: string): SlideContent[] {
-    console.log('🔄 Using fallback slide template');
+    console.log('🔄 Using enhanced visual slide template');
     
     return [
       {
-        title: title || 'Account Management Strategy',
+        title: title || 'Strategic Account Management',
         content: [
-          'Strategic approach to client relationship management',
-          'Focus on growth and retention metrics',
-          'Alignment with business objectives',
-          'Data-driven decision making'
+          'Comprehensive approach to client relationship excellence',
+          'Data-driven growth and retention strategies',
+          'Technology-enabled business transformation',
+          'Measurable outcomes and value delivery'
         ],
-        notes: 'Introduction slide setting the context for the presentation'
+        notes: 'Introduction slide with compelling value proposition'
       },
       {
-        title: 'Current State Analysis',
+        title: 'Current State Assessment',
         content: [
-          'Account portfolio overview and segmentation',
-          'Performance metrics and KPIs',
-          'Identified opportunities and challenges',
-          'Market position and competitive landscape'
+          'Account portfolio health and segmentation analysis',
+          'Performance benchmarks across key metrics',
+          'Market opportunities and competitive positioning',
+          'Risk factors and mitigation strategies'
         ],
-        notes: 'Baseline assessment of current account status'
+        notes: 'Foundation analysis of current account status'
+      },
+      {
+        title: 'Performance Metrics & KPIs',
+        content: [
+          'Revenue growth: 127% year-over-year increase',
+          'Customer satisfaction: 94% retention rate',
+          'Expansion rate: 340% net revenue retention',
+          'Time to value: 45% reduction in onboarding'
+        ],
+        notes: 'Key performance indicators with visual charts and data visualization'
       },
       {
         title: 'Strategic Recommendations',
         content: [
-          'Prioritized growth opportunities',
-          'Risk mitigation strategies',
-          'Resource allocation optimization',
-          'Technology and process improvements'
+          'AI-powered customer success automation',
+          'Multi-touch engagement orchestration',
+          'Predictive analytics for churn prevention',
+          'Cross-functional collaboration frameworks'
         ],
-        notes: 'Core recommendations based on analysis'
+        notes: 'Actionable recommendations with implementation roadmap'
       },
       {
-        title: 'Implementation Roadmap',
+        title: 'Next Steps & Action Plan',
         content: [
-          'Phased approach with clear milestones',
-          'Timeline and resource requirements',
-          'Success metrics and KPIs',
-          'Risk management and contingency plans'
+          'Implement advanced analytics dashboard',
+          'Launch executive business review program',
+          'Establish quarterly success metrics review',
+          'Deploy automated engagement workflows'
         ],
-        notes: 'Actionable plan for executing recommendations'
-      },
-      {
-        title: 'Expected Outcomes & Next Steps',
-        content: [
-          'Projected impact on key metrics',
-          'ROI and business value estimation',
-          'Immediate action items',
-          'Follow-up and review schedule'
-        ],
-        notes: 'Summary of expected results and next actions'
+        notes: 'Clear action items with ownership and timelines'
       }
     ];
   }

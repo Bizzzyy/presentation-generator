@@ -82,10 +82,10 @@ const App: React.FC = () => {
   };
 
   const examplePrompts = [
-    "Quarterly business review for SaaS client with focus on growth opportunities",
-    "Customer success strategy for enterprise software implementation",
-    "Account expansion plan for existing technology partnership",
-    "Renewal strategy presentation for high-value client relationship"
+    "Create a visually compelling presentation about customer success metrics and retention strategies for enterprise SaaS clients",
+    "Build a data-rich presentation on account expansion opportunities with visual KPIs and growth projections",
+    "Design a presentation about AI-powered sales enablement tools with charts showing ROI and adoption metrics",
+    "Generate a quarterly business review presentation with performance dashboards and strategic recommendations"
   ];
 
   return (
@@ -98,10 +98,10 @@ const App: React.FC = () => {
           </Typography>
         </Box>
         <Typography variant="h5" color="text.secondary" mb={1}>
-          AI-Powered Presentations for Account Management Professionals
+          Create Visually Stunning AI-Powered Presentations
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Generate professional 5-slide PowerPoint presentations instantly
+          Generate professional 5-slide PowerPoint presentations with modern graphics, charts, and visual elements
         </Typography>
       </Box>
 
@@ -195,12 +195,14 @@ const App: React.FC = () => {
                 Features
               </Typography>
               <Box>
+                <Chip label="Modern Visual Design" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Interactive Charts & Graphics" size="small" sx={{ m: 0.5 }} />
                 <Chip label="5 Professional Slides" size="small" sx={{ m: 0.5 }} />
                 <Chip label="Account Management Focus" size="small" sx={{ m: 0.5 }} />
                 <Chip label="AI-Generated Content" size="small" sx={{ m: 0.5 }} />
                 <Chip label="Instant PowerPoint" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Business Frameworks" size="small" sx={{ m: 0.5 }} />
-                <Chip label="Professional Design" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Data Visualization" size="small" sx={{ m: 0.5 }} />
+                <Chip label="Professional Templates" size="small" sx={{ m: 0.5 }} />
               </Box>
             </CardContent>
           </Card>
